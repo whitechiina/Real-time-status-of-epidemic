@@ -1,0 +1,99 @@
+.title
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    height: .4rem
+    padding: .26rem .16rem
+    font-weight: 500
+    font-size: .3rem
+    line-height: .44rem
+    background: #fff
+    border-bottom: .005rem solid #ebebeb
+    i 
+        display: inline-block
+        width: .1rem
+        height: .4rem
+        margin-right: .08rem
+        vertical-align: middle
+        background: #4169e2
+.list
+    osition: relative
+    display: inline-block
+    box-sizing: border-box
+    width: 100%
+    padding-top: .26rem
+    padding-right: .26rem
+    overflow: hidden
+    vertical-align: top
+    background-color #f7f7f7
+    .item
+        display flex
+        .item-left
+            position: relative
+            flex: none
+            width: 2rem
+            overflow: hidden
+            transform: translateY(.08rem)
+            .time
+                position: absolute
+                right: .62rem
+                font-weight: 500
+                font-size: .12rem
+                text-align: right
+                .data
+                    width 3rem
+                    position: absolute
+                    right: -.08rem
+                    font-weight: 500
+                    font-size: .12rem
+                    text-align: right
+                    font-size: .04rem
+                    color: rgb(153, 153, 153)
+            .yuan
+                position: absolute
+                top: 0
+                left: 1.6rem
+                z-index: 2
+                display: inline-block
+                width: .24rem
+                height: .24rem
+                background: url(../../assets/images/down.png) no-repeat
+                background-size: cover
+            .solid
+                position: absolute
+                top: .1rem
+                left: 1.71rem
+                display: inline-block
+                width: .02rem
+                height: 9.99rem
+                background: #ebebeb
+        .item-right
+            position: relative
+            flex-grow: 1
+            margin-bottom: .22rem
+            padding: .12rem .12rem
+            background: #fff
+            border-radius: .04rem
+            .title
+                color: #333
+                font-weight: 600
+                font-size: .3rem
+                line-height: .43rem
+                text-overflow: ellipsis
+            .content
+                margin-top: .04rem
+                overflow: hidden
+                color: #999
+                font-size: .12rem
+                line-height: .46rem
+                text-overflow: ellipsis
+                word-break: break-all
+                -webkit-line-clamp: 5
+            .from
+                right: .16rem
+                bottom: .12rem
+                margin-top: .04rem
+                color: #999
+                font-size: .12rem
+                text-align: right
+        
