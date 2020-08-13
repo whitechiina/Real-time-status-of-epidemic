@@ -12,16 +12,16 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api':{
-        target:'http://49.232.173.220:3001/',
+        target:'http://49.232.173.220:3001',
         changeOrigin:true,
         pathRewrite:{
-            '^/api':''
+            '^/api':'/'
         }
       },
     },
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
-    port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+    port: 8081, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,
@@ -50,13 +50,13 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: './',
+    assetsPublicPath: './',  //打包部署改为‘./’  默认/
 
     /**
      * Source Maps
      */
 
-    productionSourceMap: true,
+    productionSourceMap: false,  //打包部署改为false  默认ture
     // https://webpack.js.org/configuration/devtool/#production
     devtool: '#source-map',
 

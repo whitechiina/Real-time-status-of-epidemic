@@ -52,5 +52,4 @@
 
 <style lang="stylus" scoped>
   @import '../Fence/Fence.styl';
-
 </style>
